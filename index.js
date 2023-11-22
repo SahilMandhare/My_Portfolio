@@ -27,6 +27,13 @@ function init() {
 
 init();
 
+var crsr = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+document.addEventListener("mousemove",function(dets){
+    crsr.style.left = dets.x + 2 +"px"
+    crsr.style.top = dets.y + 2 +"px"
+})
+
 gsap.from("nav .logo, nav a, nav span", {
     y: -100,
     duration: 0.7,
@@ -116,6 +123,54 @@ gsap.from(".page2 h1, .page2 h6", {
     }
 })
 
+gsap.from(".page2 img", {
+    x: -100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page2 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+})
+
+gsap.from(".page2 .about-content", {
+    x: 100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page2 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+})
+
+gsap.from(".page2 .about-btn", {
+    screwX: -100,
+    duration: 0.7,
+    delay: 2,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page2 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+})
+
 tl2.to(".page2 h1", {
     y: -100,
 }, "anim2")
@@ -130,3 +185,49 @@ tl2.to(".page2 img", {
     x: -50,
     opacity: 0
 }, "anim2")
+
+
+// Page3
+
+var tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page3 button",
+        scroller: ".main",
+        // markers:true,
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 3
+    }
+})
+
+tl3.from(".page3 h1, .page3 h6", {
+    y: -100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page3 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+},".anim31")
+
+tl3.from(".page3 .accordion-button", {
+    y: -200,
+    duration: 1,
+    delay: 0.7,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page3 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+},".anim31")
