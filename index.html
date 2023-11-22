@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="shortcut icon"
+      href="pic-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
@@ -32,15 +37,23 @@
       <div id="home" class="page1">
         <nav>
           <div class="logo">My Portfolio</div>
-          <div class="details">
+          <div class="details invisibled">
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#connect">Connect</a></li>
-              <span id="moon" class="material-icons">dark_mode</span>
             </ul>
+          </div>
+          <div class="moto">
+            <span id="moon" class="material-icons">dark_mode</span>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </label>
           </div>
         </nav>
         <div class="intro row">
@@ -116,9 +129,7 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
-                <span class="material-icons me-2">
-                  data_object
-                  </span>
+                  <span class="material-icons me-2"> data_object </span>
                   Programming Language
                   <p class="me-2"></p>
                 </button>
@@ -129,19 +140,43 @@
               >
                 <div class="accordion-body">
                   Java
-                  <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
                     <div class="progress-bar" style="width: 100%"></div>
                   </div>
                 </div>
                 <div class="accordion-body">
                   Python
-                  <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
                     <div class="progress-bar" style="width: 100%"></div>
                   </div>
                 </div>
                 <div class="accordion-body">
                   C++
-                  <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
                     <div class="progress-bar" style="width: 100%"></div>
                   </div>
                 </div>
@@ -157,9 +192,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo"
                 >
-                <span class="material-icons me-2">
-                  code
-                  </span>
+                  <span class="material-icons me-2"> code </span>
                   Frontend Development
                   <p class="me-2"></p>
                 </button>
@@ -168,42 +201,90 @@
                 id="panelsStayOpen-collapseTwo"
                 class="accordion-collapse collapse"
               >
-              <div class="accordion-body">
-                HTML
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  HTML
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                CSS
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  CSS
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                JavaScript
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  JavaScript
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                JQuery
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  JQuery
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                EJS
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  EJS
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                React JS
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  React JS
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <div class="accordion-item">
@@ -216,9 +297,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
-                <span class="material-icons me-2">
-                  dns
-                  </span>
+                  <span class="material-icons me-2"> dns </span>
                   Backend Development
                   <p class="me-2"></p>
                 </button>
@@ -227,24 +306,48 @@
                 id="panelsStayOpen-collapseThree"
                 class="accordion-collapse collapse"
               >
-              <div class="accordion-body">
-                Node JS / Express JS
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  Node JS / Express JS
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                MongoDB
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  MongoDB
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-body">
-                MySQL
-                <div class="progress mt-2" role="progressbar" aria-label="Example 2px high" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
-                  <div class="progress-bar" style="width: 100%"></div>
+                <div class="accordion-body">
+                  MySQL
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example 2px high"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>

@@ -34,6 +34,12 @@ document.addEventListener("mousemove",function(dets){
     crsr.style.top = dets.y + 2 +"px"
 })
 
+var swibtn = document.querySelector('#checkbox');
+
+swibtn.addEventListener("click", () =>{
+    document.querySelector(".details").classList.toggle("invisibled");
+})
+
 gsap.from("nav .logo, nav a, nav span", {
     y: -100,
     duration: 0.7,
