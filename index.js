@@ -38,6 +38,36 @@ var swibtn = document.querySelector('#checkbox');
 
 swibtn.addEventListener("click", () =>{
     document.querySelector(".details").classList.toggle("invisibled");
+    document.querySelector("body").classList.toggle("overflow-y-hidden");
+})
+
+var mode = document.querySelector('#moon');
+var i = true;
+
+mode.addEventListener("click", () =>{
+    if (i) {
+        i = false;
+        mode.textContent = "dark_mode";
+        document.querySelectorAll(".text-wh-changed").forEach(element => {
+            element.classList.add("text-black-changed");
+            element.classList.remove("text-wh-changed");
+        });
+        document.querySelectorAll(".bg-black-changed").forEach(element => {
+            element.classList.add("bg-wh-changed");
+            element.classList.remove("bg-black-changed");
+        });
+    } else {
+        i = true;
+        mode.textContent = "sunny";
+        document.querySelectorAll(".text-black-changed").forEach(element => {
+            element.classList.add("text-wh-changed");
+            element.classList.remove("text-black-changed");
+        });
+        document.querySelectorAll(".bg-wh-changed").forEach(element => {
+            element.classList.add("bg-black-changed");
+            element.classList.remove("bg-wh-changed");
+        });
+    }
 })
 
 gsap.from("nav .logo, nav a, nav span", {
