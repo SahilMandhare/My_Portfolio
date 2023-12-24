@@ -236,7 +236,7 @@ var tl3 = gsap.timeline({
     }
 })
 
-tl3.from(".page3 h1, .page3 h6", {
+gsap.from(".page3 h1, .page3 h6", {
     y: -100,
     duration: 0.7,
     delay: 0.3,
@@ -250,9 +250,9 @@ tl3.from(".page3 h1, .page3 h6", {
         end: "top 50%",
         scrub: 3
     }
-},".anim31")
+},"anim31")
 
-tl3.from(".page3 .accordion-button", {
+gsap.from(".page3 .accordion-button", {
     y: -200,
     duration: 1,
     delay: 0.7,
@@ -266,4 +266,176 @@ tl3.from(".page3 .accordion-button", {
         end: "top 50%",
         scrub: 3
     }
-},".anim31")
+},"anim31")
+
+var tl32 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page3 .progress",
+        scroller: ".main",
+        // markers:true,
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 3
+    }
+})
+
+tl32.to(".page3 h1", {
+    y: -100,
+}, "anim32")
+tl32.to(".page3 h6", {
+    y: -100
+}, "anim32")
+tl32.to(".page3 .accordion-button", {
+    y: -200,
+    opacity: 0
+}, "anim32")
+
+// Page 4
+
+gsap.from(".page4 h1, .page4 h6", {
+    y: -100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page4 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+},"anim31")
+
+gsap.from(".page4 .qual-tag, .page4 .qual-data", {
+    y: -200,
+    duration: 1,
+    delay: 0.7,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page4 .qual-tag",
+        scroller: ".main",
+        // markers:true,
+        start: "top 40%",
+        end: "top 20%",
+        scrub: 3
+    }
+},"anim31")
+
+var tl32 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page5 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 3
+    }
+})
+
+tl32.to(".page4 h1", {
+    y: -100,
+}, "anim32")
+tl32.to(".page4 h6", {
+    y: -100
+}, "anim32")
+tl32.to(".page4 .qual-tag", {
+    y: -200,
+    opacity: 0
+}, "anim32")
+tl32.to(".page4 .qual-data", {
+    y: -200,
+    opacity: 0
+}, "anim32")
+
+// Page 5
+
+gsap.from(".page5 h1, .page5 h6", {
+    y: -100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page5 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+},"anim31")
+
+gsap.from(".page5 .pro-detail", {
+    x: -200,
+    duration: 1,
+    delay: 0.7,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page5 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 40%",
+        end: "top 20%",
+        scrub: 3
+    }
+},"anim31")
+
+var tl32 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page6 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 3
+    }
+})
+
+tl32.to(".page5 h1", {
+    y: -100,
+}, "anim32")
+tl32.to(".page5 h6", {
+    y: -100
+}, "anim32")
+tl32.to(".page5 .pro-detail", {
+    x: -200,
+    opacity: 0
+}, "anim32")
+
+// Page 6
+
+gsap.from(".page6 h1, .page6 h6", {
+    y: -100,
+    duration: 0.7,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page6 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 3
+    }
+},"anim31")
+
+gsap.from(".page6 .con-data", {
+    x: -200,
+    duration: 1,
+    delay: 0.7,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page6 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 40%",
+        end: "top 20%",
+        scrub: 3
+    }
+},"anim31")
