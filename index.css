@@ -203,7 +203,7 @@ a:hover {
 .intro-img .img {
   height: 10%;
   /* width: 100%; */
-  transform: translate(40px, 2px);
+  transform: translate(-6px, 2px);
 }
 
 .mouse {
@@ -455,7 +455,7 @@ a:hover {
 
 .card:hover > .img {
   height: 100%;
-  filter: blur(7px);
+  filter: brightness(0.5) blur(7px);
   animation: anim 3s infinite;
 }
 
